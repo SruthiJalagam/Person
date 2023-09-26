@@ -8,6 +8,18 @@ public class Person {
     private String phoneNo;
     private String dob;
 
+    public Person(String firstName, String lastName, String age, String address, String phoneNo, String dob) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.address = address;
+        this.phoneNo = phoneNo;
+        this.dob = dob;
+    }
+
+    public Person() {
+    }
+
     public String getFirstName() {
         return firstName;
     }
