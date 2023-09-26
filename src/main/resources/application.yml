@@ -1,6 +1,9 @@
 spring:
   application:
     name: person
+    fileDirectory: Undefined
+    fileName: PersonDev_
+    fileExtension: .csv
   profiles:
     active: local
 server:
@@ -11,3 +14,37 @@ management:
       base-path: /manage
       exposure:
         include: health,info,keepalive
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+  application:
+    fileDirectory: Undefined
+    fileName: PersonTest_
+---
+spring:
+  config:
+    activate:
+      on-profile: stage
+  application:
+    fileDirectory: Undefined
+    fileName: PersonStage_
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+  application:
+    fileDirectory: Undefined
+    fileName: PersonProd_

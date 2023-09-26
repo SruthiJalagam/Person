@@ -1,0 +1,18 @@
+[
+  {
+    "firstName": "Sruthi",
+    "lastName": "Jalagam",
+    "age": "31",
+    "dob": "01/14/1992",
+    "address": "Kerrisdale",
+    "phoneNo": "321-263-1652"
+  },
+  {
+    "firstName": "John",
+    "lastName": "Wells",
+    "age": "38",
+    "dob": "03/20/1987",
+    "address": "Windmere",
+    "phoneNo": "513-268-8886"
+  }
+]
